@@ -1,35 +1,29 @@
 import React from 'react'
 import { useSession, signIn, signOut } from 'next-auth/react'
-import styles from '../styles/Id.module.css'
+import styles from '../../styles/Id.module.css'
+import Account from './account'
+import Navbar from './navbar'
+import Sidebar from './sidebar'
+import {Col,Container,Row} from "react-bootstrap"
 import { GetServerSideProps } from 'next'
  
 const id = () => {
  const { data:session} = useSession()
  async function handleGoogleSignin(){
-  signIn('google')
-  signIn: async (user, account, profile) => {
-    if (profile.birthday) {
-      console.log(profile.birthday);
-      //here you can access the user's date of birth
-      session.set("dob", profile.birthday);
-    } else {
-      console.log('User date of birth is not available')
-      //inform user that date of birth is not available
-    }
-    return Promise.resolve(user)
-  }
+   signIn('google')
+  // signIn: async (user, account, profile) => {
+  //   if (profile.birthday) {
+  //     console.log(profile.birthday);
+  //     //here you can access the user's date of birth
+  //     session.set("dob", profile.birthday);
+  //   } else {
+  //     console.log('User date of birth is not available')
+  //     //inform user that date of birth is not available
+  //   }
+  //   return Promise.resolve(user)
+  // }
  }
- signIn: async (user, account, profile) => {
-  if (profile.birthday) {
-    console.log(profile.birthday);
-    //here you can access the user's date of birth
-    session.set("dob", profile.birthday);
-  } else {
-    console.log('User date of birth is not available')
-    //inform user that date of birth is not available
-  }
-  return Promise.resolve(user)
-}
+ 
  async function handleFacebookSignin(){
   signIn('facebook')
  }
@@ -74,14 +68,18 @@ const id = () => {
     return (
       
       <div>
-        
-        <p>You are now signed in .</p>
-        <p>{session.user.email}</p>
-        <p>Welcome,{session.user.name}</p>
-        <p>Date of birth, {session.user.dob}</p>
-       
-        <img src={session.user.image} style={{borderRadius:'50px'}}></img>
-        <button onClick={() => signOut()}>Sign out</button>
+      {/* <p>You are now signed in .</p>  
+            <img src={session.user.image} style={{borderRadius:'50px'}}></img> */}
+     <button onClick={() => signOut()}>Sign out</button>
+     <div className="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+           
+            
+              <Navbar/>
+              <div className="app-main">
+              <Sidebar/>
+              <Account/>
+           </div>
+           </div> 
       </div>
     );
   }
