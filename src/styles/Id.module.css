@@ -1,55 +1,42 @@
-.div1{
-padding: 0;
-margin: 0;
-}
-div#container{
+#container{
     background-image: url("https://images.pexels.com/photos/1363876/pexels-photo-1363876.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     width: 100%;
-    height: 650px;
+    height: 580px;
 }
 div#formcontainer{
-    width: 450px;
-    height: 570px;
+    height: 520px;
     background-color: white;
     position: relative;
-    top: 50px;
-    left: 35%;
+    top: 40px;
     box-shadow: 0 0 20px black;
     border-radius: 8px;
 }
 img#img1{
-    width: 440px;
+    width: 95%;
     height: 150px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
-/* img#cross{
-    width: 20px;
-    height: 20px;
-    position: relative;
-    top: -145px;
-    left: 94%;
-} */
 p#text{
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Roboto Slab', serif;
     text-align: center;
     position: relative;
-    top: -16px;
+    top: -13px;
 }
 input#email, input#password{
-    width: 350px;
+    width: 75%;
     height: 1px;
     position: relative;
     top: -30px;
-    left: 12%;
+    left: 11%;
     border-radius: 5px;
     border-width: 1px;
     border-color: gray;
     padding: 20px;
-    font-size: 20px;
+    font-size: 15px;
     outline: none;
-    margin-bottom: 15px;
+    margin-bottom: 9px;
 }
 input#email:hover, input#password:hover{
     background-color: gainsboro;
@@ -60,33 +47,33 @@ input#email:focus, input#password:focus{
 }
 input#check{
     position: relative;
-    top: 12px;
+    top: 7px;
     left: -66%;
 }
 p#text1{
-    font-size: 17px;
+    font-size: 13px;
     font-family: 'Roboto Slab', serif;
     position: relative;
-    top: -39px;
-    left: 19%;
+    top: -33px;
+    left: 12%;
     color: gray;
 }
 a#forget{
     position: relative;
-    top: -77px;
-    left: 67%;
+    top: -75px;
+    left: 50%;
     color: darkblue;
-    font-size: 14px;
+    font-size: 12px;
     font-family: 'Roboto Slab', serif;
 }
 button#login{
-    width: 350px;
-    height: 40px;
+    width: 85%;
+    height: 30px;
     position: relative;
-    left: 12%;
+    left: 9%;
     top: -60px;
     cursor: pointer;
-    font-size: 22px;
+    font-size: 16px;
     font-family: 'Roboto Slab', serif;
     border-radius: 5px;
     border: none;
@@ -96,53 +83,56 @@ button#login{
 button#login:hover{
     background-color: rgb(0, 128, 0, 0.7);
 }
-hr#hrline1 {
-    line-height: 1em;
-    position: relative;
-    top: -45px;
-    left: 0%;
-    width: 38%;
+hr#hrline2{
+   position: relative;
+    top: -85px;
+
+    width: 350px;
 }
 p#text2{
-    font-size: 16px;
+    font-size: 12px;
     font-family: 'Roboto Slab', serif;
     position: relative;
-    top: -60px;
+    top: -53px;
     left: 40%;
     color: gray;
 }
-hr#hrline2{
-    position: relative;
-    top: -90px;
-    left: 12%;
-    width: 350px;
-}
+
 img#facebook1, img#google1{
     width: 19px;
     height: 20px;
     position: relative;
-    left: -9%;
+    left: -2%;
     top: 1px;
-   
 }
 button#facebook, button#google{
-    width: 140px;
+    width: 45%;
     height: 40px;
     position: relative;
     top: -80px;
-    left: 12%;
+    left: 5%;
     border-radius: 5px;
     border-width: 1px;
     border-color: black;
-    font-size:17px;
+    font-size:13px;
     background-color: white;
+}
+button#google{
+    position: relative;
+    left: 10%;
+    margin-top: 6px;
+}
+button#facebook{
+    position: relative;
+    left: 25%;
 }
 span#btntext{
    position:relative;
-    left: -10%;
-    top:-10px;
+    left: -1%;
+    top:0px;
     color:blue;
 }
+
 button#facebook:hover{
     background-color: #2c27bc;
     color: white;
@@ -150,7 +140,8 @@ button#facebook:hover{
 }
 button#google{
     position: relative;
-    left: 26.5%;
+    left: 25%;
+    margin-top: 6px;
 }
 button#google:hover{
     background-color: #ce6c46;
@@ -160,34 +151,99 @@ button#google:hover{
 p#text3{
     position: relative;
     top: -66px;
-    left: 32%;
-    font-size: 15px;
+    left: 22%;
+    font-size: 12px;
     font-family: 'Roboto Slab', serif;
     color: gray;
 }
 a#signup{
     position: relative;
     top: -106px;
-    left: 55%;
+    left: 58%;
     color: rgb(188, 28, 241);
-    font-size: 15px;
+    font-size: 13px;
     font-family: 'Roboto Slab', serif;
 }
-@media only screen and (max-width:830px){
-    #formcontainer{
-        position: relative;
-        left: 20%;
+/* Extra small devices (phones, 320px and down) */
+@media only screen and (max-width: 320px) {
+    div#formcontainer{
+        width: 85%;
+        left: 5%;
+
     }
+
 }
-@media only screen and (max-width:620px){
-    #formcontainer{
+/* small devices (phones, 320px and up) */
+@media only screen and (min-width: 320px) {
+    div#formcontainer{
+        width: 85%;
+        left: 5%;
+    }
+    button#facebook, button#google{
+        width: 85%;
+        height: 40px;
         position: relative;
+        top: -80px;
         left: 10%;
+        border-radius: 5px;
+        border-width: 1px;
+        border-color: black;
+        font-size:13px;
+        background-color: white;
+    }
+
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    div#formcontainer{
+        width: 45%;
+        left: 25%;
     }
 }
-@media only screen and (max-width:530px){
-    #formcontainer{
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    div#formcontainer{
+        width: 38%;
+        left: 30%;
+    }
+    img#facebook1, img#google1{
+        width: 19px;
+        height: 20px;
         position: relative;
-        left: 4%;
+        left: -7%;
+        top: 1px;
+
+    }
+    button#facebook, button#google{
+        width: 40%;
+        height: 40px;
+        position: relative;
+        top: -77px;
+        left: 8%;
+        border-radius: 5px;
+        border-width: 1px;
+        border-color: black;
+        font-size:13px;
+        background-color: white;
+    }
+    button#google{
+        left:12%;
+    }
+    span#btntext{
+       position:relative;
+        left: -10%;
+        top:0px;
+        color:blue;
+    }
+
+
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    div#formcontainer{
+        width: 25%;
+        left: 40%;
     }
 }
