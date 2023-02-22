@@ -1,5 +1,5 @@
 import React from 'react'
-import { useSession, signIn, signOut } from 'next-auth/react'
+import { useSession, signIn} from 'next-auth/react'
 import styles from '../../styles/Id.module.css'
 import Account from './account'
 import Navbar from './navbar'
@@ -17,6 +17,7 @@ const id = () => {
     return (
       <div className={styles.div1}>
         <div id={styles.container}>
+          <form>
           <div id={styles.formcontainer}>
             <img id={styles.img1} src="https://images.pexels.com/photos/414645/pexels-photo-414645.jpeg?cs=srgb&dl=background-beverage-brown-414645.jpg&fm=jpg" />
             <p id={styles.text}>Login to your Account</p>
@@ -34,6 +35,7 @@ const id = () => {
             <p id={styles.text3}>Not a Member?</p>
             <a id={styles.signup} href="#">Signup Now</a>
           </div>
+          </form>
         </div>
       </div>
     );
@@ -42,12 +44,12 @@ const id = () => {
     console.log(session);
     return (
       <div>
-        <button onClick={() => signOut()}>Sign out</button>
+
         <div className="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
           <Navbar />
           <div className="app-main">
-            <Sidebar />
-            <Account />
+             <Sidebar />
+              <Account />   
           </div>
         </div>
       </div>

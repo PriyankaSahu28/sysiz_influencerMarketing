@@ -1,0 +1,20 @@
+/* @font-face {
+    font-family: 'fa-solid-900';
+    src: url('./assets/fonts/fa-solid-900.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+} */
+
+/* @font-face {
+    font-family: 'fa-solid-900';
+    src: url('./assets/fonts/fa-solid-900.woff2') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+} */
+
+ @font-face {
+    font-family: 'Pe-icon-7-stroke';
+    src: url('./assets/fonts/Pe-icon-7-stroke.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}

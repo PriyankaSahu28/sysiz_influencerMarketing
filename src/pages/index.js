@@ -1,7 +1,7 @@
 import { Inter } from '@next/font/google'
 import React from 'react'
 import Id from './components/id'
-import Statistics from './statistics';
+
 const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
     return (
