@@ -11,12 +11,13 @@ const navbar = () => {
   return (
     <div className="container-fluid">
        <nav className={styles.navbar}>
+       <ul className='header-menu nav'>
         <Link className={styles.logo} href="/facebook">
           <FaFacebook className={styles.fblogo} />
           <span className={styles.fbtext}>Facebook</span>
         </Link>
 
-  <ul className='header-menu nav'>
+
     <li className={styles.navlist}>
       <Link className={styles.navitem} href="/home" >
         <FaHome />
@@ -42,14 +43,14 @@ const navbar = () => {
       <img className={styles.profile} src={session.user.image} />
     </Nav.Item>
 
-    <Nav className="ml-auto ">
-      <NavDropdown title={`Welcome, User`} id="basic-nav-dropdown ">
+
+      <NavDropdown className="ml-auto mt-auto" title={`Welcome, User`} id="basic-nav-dropdown ">
         <NavDropdown.Item href="/user/profile"><i className="icon-cog"></i> Profile</NavDropdown.Item>
         <NavDropdown.Item href="/help/photos"><i className="icon-envelope"></i> Photos</NavDropdown.Item>
         <NavDropdown.Divider />
         <NavDropdown.Item href="/auth/signout" onClick={signOut}>Sign Out</NavDropdown.Item>
       </NavDropdown>
-    </Nav>
+
   </ul>
 </nav>
 

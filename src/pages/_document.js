@@ -10,9 +10,15 @@ export default function Document() {
       type="text/css"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-      <script type="text/javascript" src="Scripts/jquery-2.1.1.min.js"></script>
-<script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js" crossorigin></script>
+
+<script
+  src="https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js"
+  crossorigin></script>
+
+<script
+  src="https://cdn.jsdelivr.net/npm/react-bootstrap@next/dist/react-bootstrap.min.js"
+  crossorigin></script>
       </Head>
       <body>
         <Main/>

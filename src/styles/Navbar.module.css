@@ -4,7 +4,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-bottom: 1px solid #d1d5db;
   position:relative;
-  height:100px;
+  height:90px;
 }
 .logo{
     display: flex;
@@ -30,7 +30,7 @@
 
 .navlist{
     display: inline-block;
-    margin:-10px 20px;
+    margin:32px 20px;
      font-size:16px;
     text-align: center;
     color:#333;
@@ -48,15 +48,14 @@
     margin-bottom: 15px;
 }
 .profile{
-  border-radius: 50px;
+  border-radius: 40px;
   position: absolute;
  justify-content: right;
 
   right:50px;
   height: 40px;
- margin-top: -50px;
+ margin-top: 10px;
 }
-
 
 
 
