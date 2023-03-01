@@ -5,19 +5,27 @@ import {SessionProvider} from 'next-auth/react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useEffect } from 'react'
 import '../font.css'
-  //  import '../assets/fonts/Pe-icon-7-stroke.ttf';
-  //   import '../assets/fonts/fa-solid-900.ttf';
+import Id from './components/id'
+import {  Switch,Routes ,Route, }from 'react-router-dom';
+
 
   function App({ Component, pageProps,session}) {
     useEffect(()=>{
-      
+      <Switch>
+      <Routes>
+          <Route path="/" element={<Id/>}/>
+      </Routes>
+  </Switch>
+
     },[])
    return (
 
-   <SessionProvider>
+
+   <SessionProvider session={session}>
      <Component {...pageProps} />
 
    </SessionProvider>
+
    )
 }
 export default App
